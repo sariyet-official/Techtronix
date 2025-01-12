@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* login design */
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-image: url(../Images/Admin-login-bg-8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container{
+    width:420px;
+    background-color:#fff;
+    color:black;
+    border-radius: 15px;
+    padding:50px;
+
+}
+.form-container h3{
+    font-size:25px;
+    text-align:center;
+    color:#3c3a3a;
+}
+.form-logo img{
+    width: 85%;
+    height: 55%;
+    padding-top: 20px;
+    top:-30px;
+    position:relative;
+    padding-right: 50px;
+    left: 45px;
+}
+.form-container .input-box{
+    width:95%;
+    height:50px;
+    position:relative;
+    margin:20px 0;
+    padding-left: 10px;
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background:#e4e1e1;
+    border:none;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius:40px;
+    font-size:16px;
+    color:black;
+    padding:20px 45px 20px 20px;
+}
+.form-container p{
+    font-size:9.5px;
+    margin-top: 5px;
+    text-align: center;
+    color: #3d3838;
+}
+.form-container p span{
+    color: #388880;
+}
+.input-box input::placeholder{
+    color:rgb(88, 86, 86);
+}
+.input-box i{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+}
+
+.form-container .btn{
+    width:100%;
+    height:45px;
+    background:#8c52ff;
+    border:none;
+    outline: none;
+    border-radius:40px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    color:#fff;
+    font-weight: 600;
+    
+}
+form{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.form-container .btn:hover{
+    color: #ffbd59;
+    background:#fff;
+    opacity: 1;
+    border: 2px solid #ffbd59;
+    transition: 0.3s ease-in;
+}
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size:55%;
+    }  
+}
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    } 
+    body{
+        padding: 20px 20px 20px 20px;
+    }
+}

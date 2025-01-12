@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+} 
+body{
+    background-image: url('../Images/Admin-login-bg-8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* /////for dashboard//// */
+.header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 0px;
+}
+.header .head-1{
+    background:#fff;
+    padding:0.5rem 6%;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.header .head-1 .admin-mess span{
+    color: #8c52ff;
+}
+.header .head-1 .admin-mess{
+   margin: 30px 0px 20px 0px;
+    color: #ffbd59;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header .head-1 .head-icons{
+    display: inline-block;
+}
+.header .head-1 .head-icons a{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+.header .head-1 .head-icons a:hover{
+    font-size: 30px;
+    color:#8c52ff;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.btn{
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   background: #8c52ff;
+   text-align: center;
+   text-decoration: none;
+   color: #fff;
+   transition: all .3s ease-in-out;
+}
+
+.btn:hover{
+   background: rgba(255,255,255,.5);
+   color: #ffbd59;
+   border-color: #ffbd59;
+}
+
+.message{
+   margin-top: 80px;
+   display: block;
+   background: #e9e6e6;
+   padding: 20px;
+   font-size: 2rem;
+   color:var(--black);
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.container{
+   max-width: 1200px;
+   padding:10rem;
+   margin:0 auto;
+}
+.admin-product-form-container.centered{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   
+}
+
+.admin-product-form-container form{
+   max-width: 50rem;
+   margin:0 auto;
+   padding:2rem;
+   border-radius: .5rem;
+   background-color: rgba(255,255,255,.5);
+}
+
+.admin-product-form-container form h3{
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 1rem;
+   text-align: center;
+   font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box{
+   width: 100%;
+   border-radius: .5rem;
+   padding:1.2rem 1.5rem;
+   font-size: 1.7rem;
+   margin:1rem 0;
+   background: var(--white);
+   text-transform: none;
+}
+
+.product-display{
+   margin:2rem 0;
+   background-color:#f6f2f2;
+}
+
+.product-display .product-display-table{
+   width: 100%;
+   text-align: center;
+}
+
+.product-display .product-display-table thead{
+   background: #8c52ff;
+   color: #fff;
+}
+
+.product-display .product-display-table th{
+   padding:1rem;
+   font-size: 2rem;
+}
+
+
+.product-display .product-display-table td{
+   padding:1rem;
+   font-size: 2rem;
+   border-bottom: var(--border);
+}
+
+.product-display .product-display-table .btn:first-child{
+   margin-top: 0;
+}
+
+.product-display .product-display-table .btn:last-child{
+   background: crimson;
+}
+
+.product-display .product-display-table .btn:last-child:hover{
+   background: var(--black);
+}
+
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+   .header .head-1 .admin-mess{
+      margin: 20px 0px 20px 0px;
+      
+   }
+
+}
+
+@media (max-width:768px){
+
+   .product-display{
+      overflow-y:scroll;
+   }
+
+   .product-display .product-display-table{
+      width: 80rem;
+   }
+  .header .head-1 .admin-mess{
+   margin: 20px 20px 10px 0px;
+   
+}
+
+}
+
+@media (max-width:547px){
+
+   html{
+      font-size: 50%;
+   }
+   
+}
+@media (max-width:415){
+   header{
+      width: 10%;
+   }
+
+}
+
+
